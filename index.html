@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Access-Control-Allow-Origin" content="*" />
@@ -8,15 +9,15 @@
     <link rel="shortcut icon" href="https://my.vnpt.com.vn/logo.svg" />
     <title>VTC FLY WIFI </title>
 
-    <link rel="stylesheet" href="./Content/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./Content/vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./Content/css/bootstrap-datetimepicker.css" />
-    <link rel="stylesheet" href="./Content/vendor/linearicons/style.css">
-    <link rel="stylesheet" href="./Content/vendor/chartist/css/chartist-custom.css">
+    <link rel="stylesheet" href="./admin/Content/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./admin/Content/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./admin/Content/css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" href="./admin/Content/vendor/linearicons/style.css">
+    <link rel="stylesheet" href="./admin/Content/vendor/chartist/css/chartist-custom.css">
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./Content/css/select2.min.css" />
+    <link rel="stylesheet" href="./admin/Content/css/select2.min.css" />
 
-    <link rel="stylesheet" href="./Content/css/style.css">
+    <link rel="stylesheet" href="./admin/Content/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <script>
@@ -27,146 +28,76 @@
         window.base_url = "/";
         window.map_img = window.images + 'vn.png';
         window.host_api = "/";
-        window.templateUrl = './template/';
+        window.templateUrl = './Template/';
     </script>
-    <script src="./Content/lib/jquery.min.js"></script>
-    <script src="./Content/lib/cropper.min.js"></script>
-    <script src="./Content/lib/jquery.mask.min.js"></script>
+    <script src="./admin/Content/lib/jquery.min.js"></script>
+    <script src="./admin/Content/lib/cropper.min.js"></script>
+    <script src="./admin/Content/lib/jquery.mask.min.js"></script>
     <script src="https://cdn.ckeditor.com/4.5.3/full/ckeditor.js"></script>
-    <script src="./Content/lib/angular.min.js"></script>
-    <script src="./Content/lib/select2.min.js"></script>
-    
-    <script src="./Content/lib/angular-ui-router.js"></script>
-    <script src="./Content/lib/angular-cookies.js"></script>
-    <script src="./Content/lib/angular-filter.js"></script>
-    <script src="./Content/lib/angular-ckeditor.js"></script>
-    <script src="./Content/lib/bootstrap.min.js"></script>
-    <script src="./Content/lib/bootstrapValidator.min.js"></script>
-    <script src="./Content/lib/ui-bootstrap-tpls.min.js"></script>
-    <script src="./Content/lib/printThis.js"></script>
-    <script src="./Content/lib/bootstrap-datetimepicker.min.js"></script>
-    <script src="./Content/lib/angular-base64-upload.js"></script>
-    <script src="./Content/lib/adminlte.js"></script>
+    <script src="./admin/Content/lib/angular.min.js"></script>
+    <script src="./admin/Content/lib/select2.min.js"></script>
+
+    <script src="./admin/Content/lib/angular-ui-router.js"></script>
+    <script src="./admin/Content/lib/angular-cookies.js"></script>
+    <script src="./admin/Content/lib/angular-filter.js"></script>
+    <script src="./admin/Content/lib/angular-ckeditor.js"></script>
+    <script src="./admin/Content/lib/bootstrap.min.js"></script>
+    <script src="./admin/Content/lib/bootstrapValidator.min.js"></script>
+    <script src="./admin/Content/lib/ui-bootstrap-tpls.min.js"></script>
+    <script src="./admin/Content/lib/printThis.js"></script>
+    <script src="./admin/Content/lib/bootstrap-datetimepicker.min.js"></script>
+    <script src="./admin/Content/lib/angular-base64-upload.js"></script>
+    <script src="./admin/Content/lib/adminlte.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="./Content/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="./Content/scripts/klorofil-common.js"></script>
+    <script src="./admin/Content/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="./admin/Content/scripts/klorofil-common.js"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-  
-    <script src="./Content/js/webFlywifi.js"></script>
+
+    <script src="./admin/Content/js/webFlywifi.js"></script>
 
 </head>
-<body>
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        .header{
-            padding: 20px;
-            background-color: paleturquoise;
-        }
-        .manageruser a{
-            display: inline-block;
-            position: relative;
-            line-height: 100px;
-            font-size: 20pt;
-            text-decoration: none;
-            color: #000;
-        }
-        .manageruser a:hover {
-            font-size: 22pt;
-            line-height: 100px;
 
-        }
-        .fas{
-            color: red;
-            padding: 10px;
-        }
-        .function{
-            background-color: blue;
-            text-align: center;
-            font-size: 15pt;
-            color: #fff;
-            padding: 10px;
-        }
-        .function-content{
-            border-right: 2px solid #000;
-
-        }
-        .menu li {
-            list-style-type: none;
-            padding: 5px;
-            font-size: 15pt;
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-        .menu li a{
-            color: #000;
-            text-decoration: none;
-        }
-        .menu li a:hover{
-            color: #9eacf2;
-            font-weight: bold;
-        }
-        .col-md-3.content-menu{
-            text-align: left;
-            padding: 10px;
-            border-right: 2px solid #000;
-            height: 540px;
-        }
-       
-        @media only screen and (max-width: 768px) {
-        .function .col-md-3 span {
-            display: none;
-        }
-        .function .col-md-3:after {
-            content: "\f0c9";
-            font-family: FontAwesome;
-            font-size: 30px;
-            margin-right: 10px;
-        }
-        }
-    </style>
-
-
+<body ng-app="ngAdmin">
     <div class="row header">
         <div class="col-md-8 logo-header ">
-          <a href="#"><img src="./Content/Logo.png" width="200" alt="VTC logo"></a>
+            <a href="#"><img src="./admin/Content/Logo.png" width="200" alt="VTC logo"></a>
         </div>
         <div class="col-md-4 text-right manageruser">
-          <a href="#"><i class="fas fa-power-off"></i>Nguyễn Văn A</a>
+            <a href="#"><i class="fas fa-power-off"></i>Nguyễn Văn A</a>
         </div>
     </div>
     <div>
+        <div class="row">
+            <div class="col-md-3" style="padding: 0; border-right: 2px solid #000;height: 540px;">
+                <div class="function">
+                    <span>Chức năng</span>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Danh sách tiếp viên</a></li>
+                    <li><a href="#">Hạn mức tiếp viên trưởng</a></li>
+                    <li><a href="">Quản lý voucher</a></li>
+                    <li> Thống kê
+                        <ul>
+                            <li><a href="#">Doanh Số</a></li>
+                            <li><a href="#">Bán voucher</a></li>
+                            <li><a href="#">Mã gần hết hạn</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="row function">
-            <div class="col-md-3">
-                <span>Chức năng</span>
-                
-              </div>
-              <div class="col-md-9">
-                <span>{Title}</span>
-              </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-md-3 content-menu">
-            <ul class="menu">
-                <li><a href="#">Danh sách tiếp viên</a></li>
-                <li><a href="#">Hạn mức tiếp viên trưởng</a></li>
-                <li><a href="">Quản lý voucher</a></li>
-                <li> Thống kê 
-                    <ul>
-                        <li><a href="#">Doanh Số</a></li>
-                        <li><a href="#">Bán voucher</a></li>
-                        <li><a href="#">Mã gần hết hạn</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="col-md-9">
+            <div class="col-md-9" style="padding: 0;">
+                <div ng-class="{ 'main': !login_active}">
+                    <div  ng-class="{ 'main-content': !login_active}">
+                        <div  ng-class="{ 'container-fluid': !login_active}">
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
